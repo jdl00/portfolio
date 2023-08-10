@@ -23,6 +23,7 @@ This website was built using the following technologies:
 ## Style Guides Used
 
 - [Google Typescript Style Guide](https://google.github.io/styleguide/tsguide.html)
+- [Material Design Design Guide](https://m2.material.io/design/guidelines-overview)
 
 ## Contributing
 

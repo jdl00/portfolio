@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
-import colors from './colors';
-import backgroundColors from './BackgroundColors';
+import colors from './colorPalette';
+import backgroundColors from './backgroundPallete';
 
 const theme = createTheme({
 

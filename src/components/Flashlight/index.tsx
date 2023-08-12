@@ -1,11 +1,24 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 
-import { Box } from '@mui/material';
+import { StyledBox } from './FlashlightStyle';
 
+/**
+ * `Flashlight` Component.
+ * Renders a flashlight effect that follows the mouse movement and adjusts to screen resizing.
+ * The flashlight effect is achieved using a radial gradient and is represented as a circle on the screen.
+ * The size and position of the circle change based on mouse movement and window resizing.
+ *
+ * @component
+ * @example
+ * ```jsx
+ * <Flashlight />
+ * ```
+ */
 const Flashlight: React.FC = () => {
   const circleRef = useRef<HTMLDivElement | null>(null);
   const [circleDiameter, setCircleDiameter] = useState<number>(0);
 
+  // Adjust the circle diameter if window is resized
   useEffect(() => {
     const handleResize = () => {
       const size = (window.innerWidth + window.innerHeight) / 2;
@@ -20,6 +33,7 @@ const Flashlight: React.FC = () => {
     };
   }, []);
 
+  // Adjust the circle position based on mouse movement
   const handleMouseMove = useCallback((e: MouseEvent) => {
     if (circleRef.current) {
       const centerOffset = circleDiameter / 2;
@@ -30,6 +44,7 @@ const Flashlight: React.FC = () => {
     }
   }, [circleDiameter]);
 
+  // Update circle position based on mouse movement
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove);
 
@@ -38,29 +53,12 @@ const Flashlight: React.FC = () => {
     };
   }, [circleDiameter, handleMouseMove]);
 
+  // JSX rendering logic
   return (
-    <Box
-      sx={{
-        width: '100vw',
-        height: '100vh',
-        position: 'relative',
-        overflow: 'hidden',
-        '.circle': {
-          width: `${circleDiameter}px`,
-          height: `${circleDiameter}px`,
-          borderRadius: '50%',
-          position: 'absolute',
-          pointerEvents: 'none',
-          background: 'radial-gradient(circle at center, rgba(150, 152, 220, 0.5), rgba(50, 44, 80, 0.1),  transparent);',
-          backdropFilter: 'blur(25px)',
-          transition: 'transform 0.05s linear'
-        }
-      }}
-    >
-      <Box ref={circleRef} className="circle" />
-    </Box>
+    <StyledBox circleDiameter={circleDiameter}>
+      <div ref={circleRef} className="circle" />
+    </StyledBox>
   );
-
 };
 
 export default Flashlight;

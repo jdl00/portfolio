@@ -1,23 +1,25 @@
-// FlashlightStyles.ts
-import styled from 'styled-components';
+import { styled } from '@mui/system';
 
-/**
- * Style for the gradient circle
- */
-export const StyledBox = styled.div<{ circleDiameter: number }>`
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+// Interface for the diameter of the gradient circle
+interface StyledBoxProps {
+  circleDiameter: number;
+}
 
-  .circle {
-    width: ${props => `${props.circleDiameter}px`};
-    height: ${props => `${props.circleDiameter}px`};
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-    background: radial-gradient(circle at center, rgba(150, 152, 220, 0.5), rgba(50, 44, 80, 0.1), transparent);
-    backdrop-filter: blur(25px);
-    transition: transform 0.05s linear;
-  }
-`;
+// Styling for the gradient circle
+export const StyledBox = styled('div')<StyledBoxProps>(({ circleDiameter }) => ({
+  width: '100vw',
+  height: '100vh',
+  position: 'relative',
+  overflow: 'hidden',
+  zIndex: 999,
+
+  '.circle': {
+    width: circleDiameter,
+    height: circleDiameter,
+    borderRadius: '50%',
+    position: 'absolute',
+    pointerEvents: 'none',
+    background: 'radial-gradient(circle at center, rgba(150, 152, 220, 0.35), rgba(50, 44, 80, 0.05), transparent)',
+    transition: 'transform 0.05s linear',
+  },
+}));

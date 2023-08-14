@@ -7,6 +7,8 @@ const theme = createTheme({
 
   typography: {
     fontFamily: 'IBM Plex Sans, Inter, Arial, sans-serif', // Primary font + fallback fonts
+    fontWeightRegular: 400,
+    fontWeightBold: 700,
   },
   palette: {
     background: {
@@ -22,7 +24,20 @@ const theme = createTheme({
     info: {
       main: colors.info,
     },
-  }
+    text: {
+      primary: colors.primary,
+      // secondary, hint, disabled... can also be set if needed
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundImage: backgroundColors.default,
+        },
+      },
+    },
+  },
 });
 
 export default theme;

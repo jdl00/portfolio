@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import LeftSection from './LeftSection/LeftSection';
 import RightSection from './RightSection/RightSection';
 import { StyledContainer, StyledGridContainer, StyledGridItem, StyledAbsoluteDiv } from './MainLayoutStyles';
 
-type MainLayoutProps = {
-  children?: React.ReactNode;
-};
+interface MainLayoutProps {
+  children?: ReactNode;
+}
 
-function MainLayout({ children }: MainLayoutProps) {
+const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <StyledContainer maxWidth={false}>
       <StyledGridContainer container spacing={3}>
@@ -23,7 +23,8 @@ function MainLayout({ children }: MainLayoutProps) {
         {children}
       </StyledAbsoluteDiv>
     </StyledContainer>
-  );
-}
+);
+};
+
 
 export default MainLayout;

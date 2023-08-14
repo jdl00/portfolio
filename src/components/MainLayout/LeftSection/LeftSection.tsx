@@ -1,20 +1,13 @@
 import React from 'react';
 
-import { StyledBoxWithPadding, StyledBox, StyledInnerBox, StyledPaper } from './LeftStyles';
+import BuildContentsAndLinks from './ContentsLinks';
+import BuildTitleHeadline from './TitleHeadline';
 
 function LeftSection() {
   return (
     <>
-      <StyledBoxWithPadding>
-        <StyledPaper>
-          <StyledInnerBox>Box 1</StyledInnerBox>
-        </StyledPaper>
-      </StyledBoxWithPadding>
-      <StyledBox>
-        <StyledPaper>
-          <StyledInnerBox>Box 2</StyledInnerBox>
-        </StyledPaper>
-      </StyledBox>
+    <BuildTitleHeadline />
+    <BuildContentsAndLinks />
     </>
   );
 }

@@ -30,6 +30,11 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiPaper: {
+      defaultProps: {
+        elevation: 0,
+      }
+    },
     MuiCssBaseline: {
       styleOverrides: {
         body: {

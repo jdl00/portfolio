@@ -23,7 +23,6 @@ export const StyledGridContainer = styled(Grid)({
 // Styled grid container for containing the sections
 export const StyledGridItem = styled(Grid)({
   height: '100%',
-  paddingRight: '8rem',
 });
 
 // Styled absolute div for the radial cursor circle

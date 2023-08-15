@@ -10,7 +10,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <StyledContainer maxWidth={false}>
+    <StyledContainer>
       <StyledGridContainer container spacing={3}>
         <StyledGridItem item xs={6}>
           <LeftSection />

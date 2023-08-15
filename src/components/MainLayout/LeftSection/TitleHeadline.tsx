@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { StyledBoxWithPadding, StyledInnerBox, StyledPaper, NameHeader } from './LeftStyles';
+import { StyledBoxWithPadding,
+    StyledInnerBox,
+    StyledPaper,
+    NameHeader,
+    CurrentTitle,
+    ShortDescription } from './LeftStyles';
 
 const BuildTitleHeadline: React.FC = () => {
     return (
@@ -8,8 +13,13 @@ const BuildTitleHeadline: React.FC = () => {
             <StyledPaper>
             <StyledInnerBox>
                 <NameHeader variant='h1'>Jonas Lindstrom</NameHeader>
-                <h2 style={{textAlign: "center", marginTop: "0", fontWeight: "bold", paddingTop: "0%"}}>Graduate Software Engineer</h2>
-                <h4>I Build API's and fullstack applications.</h4>
+                <CurrentTitle variant='h2'>
+                    Graduate Software Engineer
+                </CurrentTitle>
+                <ShortDescription variant='h3'>
+                    I craft full-stack applications,
+                    combining frontend artistry with backend precision.
+                </ShortDescription>
             </StyledInnerBox>
             </StyledPaper>
       </StyledBoxWithPadding>

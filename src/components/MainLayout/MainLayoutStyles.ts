@@ -7,7 +7,11 @@ export const StyledContainer = styled(Container)({
   width: '100vw',
   display: 'flex',
   flexDirection: 'column',
-  padding: '2rem 6rem',
+  paddingTop: '4rem',
+  paddingBottom: '4rem',
+  paddingLeft: '6rem',
+  paddingRight: '6rem',
+  maxWidth: 'xl',
 });
 
 // Styled grid container for splitting sections
@@ -19,6 +23,7 @@ export const StyledGridContainer = styled(Grid)({
 // Styled grid container for containing the sections
 export const StyledGridItem = styled(Grid)({
   height: '100%',
+  paddingRight: '8rem',
 });
 
 // Styled absolute div for the radial cursor circle

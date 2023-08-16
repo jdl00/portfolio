@@ -1,13 +1,22 @@
 import React, { ReactNode } from 'react';
 
-import LeftSection from './LeftSection/LeftSection';
-import RightSection from './RightSection/RightSection';
+import LeftSection from './LeftSection';
+import RightSection from './RightSection';
 import { StyledContainer, StyledGridContainer, StyledGridItem, StyledAbsoluteDiv } from './MainLayoutStyles';
 
+/**
+ * Interface containing children prop for the main layout
+ */
 interface MainLayoutProps {
   children?: ReactNode;
 }
 
+/**
+ * Holds the relevant elements of the main page
+ *
+ * @param {ReactNode} children - The children of the page
+ * @returns The main page component
+ */
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <StyledContainer>
@@ -19,6 +28,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <RightSection />
         </StyledGridItem>
       </StyledGridContainer>
+      {/** React component for flashlight effect */}
       <StyledAbsoluteDiv>
         {children}
       </StyledAbsoluteDiv>

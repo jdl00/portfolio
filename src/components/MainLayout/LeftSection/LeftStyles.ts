@@ -1,53 +1,48 @@
 import { styled, alpha } from '@mui/system';
-import { Box, Paper, Typography } from '@mui/material';
+import { Box, Container, Paper, Typography } from '@mui/material';
 
 /**
- * Below is the styled headers
+ * Styled headers
  */
-export const NameHeader = styled(Typography)({
-  fontWeight: 700,
-  fontSize: '3rem',
-});
+export const Headers = {
+  Name: styled(Typography)(({ theme }) => ({
+    fontWeight: 700,
+    fontSize: '3rem',
+  })),
 
-export const CurrentTitle = styled(Typography)({
-  fontWeight: "normal",
-  fontSize: '1.5rem',
-  paddingTop: '1rem',
-});
+  Title: styled(Typography)({
+    fontWeight: "normal",
+    fontSize: '1.5rem',
+    paddingTop: '1rem',
+  }),
 
-export const ShortDescription = styled(Typography)(({ theme }) => ({
-  fontWeight: 'normal',
-  fontSize: '1rem',
-  paddingTop: '1rem',
-  color: alpha(theme.palette.secondary.main, 0.85),
-}));
+  Description: styled(Typography)(({ theme }) => ({
+    fontWeight: 'normal',
+    fontSize: '1rem',
+    paddingTop: '1rem',
+    color: alpha(theme.palette.secondary.main, 0.85),
+    alignItems: 'flex-start',
+  })),
+};
 
 /**
- * TODO: Refactor these names so that they more implicit
- * as to what style their for
+ * Styled containers
  */
+export const Containers = {
+  PaddedOuter: styled(Container)(({ theme }) => ({
+    margin: '1rem, 1rem',
+    marginBottom: theme.spacing(2),
+    display: 'flex',
+    backgroundColor: 'transparent',
+  })),
 
-/**
- * Below are the styled boxes.
- */
-export const StyledBoxWithPadding = styled(Box)(({ theme }) => ({
-  marginBottom: theme.spacing(2),
-  display: 'flex',
-  backgroundColor: 'transparent',
-}));
+  LayoutPaper: styled(Paper)(({ theme }) => ({
+    width: '100%',
+    backgroundColor: 'transparent',
+  })),
 
-export const StyledBox = styled(Box)(({ theme }) => ({
-  marginBottom: theme.spacing(2),
-  display: 'flex',
-  backgroundColor: 'transparent',
-}));
-
-export const StyledInnerBox = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(2),
-  backgroundColor: 'transparent',
-}));
-
-export const StyledPaper = styled(Paper)(({ theme }) => ({
-  width: '100%',
-  backgroundColor: 'transparent',
-}));
+  Content: styled(Box)(({ theme }) => ({
+    padding: theme.spacing(2),
+    backgroundColor: 'transparent',
+  })),
+};

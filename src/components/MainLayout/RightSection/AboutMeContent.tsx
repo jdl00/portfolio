@@ -5,16 +5,13 @@ import { StyledParagraph } from './RightStyles';
 const aboutMeContent = [
     <>
     <StyledParagraph variant="body1">
-        During the tech revolution of the 2000s, I had a <strong>front-row seat</strong> to the rapid advancements and transformations of computers. This dynamic environment didn't just pique my curiosity—it ignited a deep-seated passion for software engineering.
+        During the tech renaissance of the 2000s, I became captivated by the expansive world of computers and software. This burgeoning interest carried me to university, where I ventured beyond traditional coursework to create software that employed <strong>neural networks</strong> for stock market portfolio enhancements.
     </StyledParagraph>
     <StyledParagraph variant="body1">
-        During my years at university, I didn't merely stick to the curriculum. I ventured beyond, developing a novel software that harnessed the power of <strong>neural networks</strong> and distributed them across computers with the aim of creating a sophisticated stock market portfolio.
+        In the professional realm, my collaboration with the <strong>European Space Agency</strong> stands out. Together, we developed software vital for launching satellites, marking a significant stride in our journey to decode the cosmos.
     </StyledParagraph>
     <StyledParagraph variant="body1">
-        As I ventured into the professional world, my thirst for pushing boundaries remained insatiable. My collaboration with the <strong>European Space Agency</strong> is a testament to that. There, I played a key role in crafting software instrumental for launching satellites, an endeavor that amplifies our understanding of the vast cosmos.
-    </StyledParagraph>
-    <StyledParagraph variant="body1">
-        Outside the realm of code and tech, I'm equally passionate. Music production offers me a canvas to express and explore, while regular workouts and football, both as a spectator and player, balance out my life. For a deeper dive into my journey and the myriad projects I've undertaken, I invite you to visit my portfolio website. It's a reflection of my dedication, aspirations, and the milestones that have come to define my path.
+        Outside the sphere of work, I have diverse passions. Music production is my creative outlet, a counterpoint to the rigor of coding. Meanwhile, fitness and football offer a physical and mental escape, grounding me amidst my pursuits. To delve deeper into my story, my portfolio website offers a detailed insight.
     </StyledParagraph>
     </>
 ];

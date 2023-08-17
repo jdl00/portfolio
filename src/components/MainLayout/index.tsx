@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 import { StyledContainer, StyledGridContainer, StyledGridItem, StyledAbsoluteDiv } from './MainLayoutStyles';
+import { Container } from '@mui/material';
 
 /**
  * Interface containing children prop for the main layout
@@ -33,7 +34,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         {children}
       </StyledAbsoluteDiv>
     </StyledContainer>
-);
+  );
 };
 
 

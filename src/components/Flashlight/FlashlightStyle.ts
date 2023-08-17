@@ -9,7 +9,7 @@ interface StyledBoxProps {
 // TODO: If colors are reused moved into global style, or at least use global style?
 // TODO: See if this method affects the functionality
 export const StyledBox = styled('div')<StyledBoxProps>(({ circleDiameter }) => ({
-  width: '100vw',
+  width: '100%',
   height: '100vh',
   position: 'relative',
   overflow: 'hidden',

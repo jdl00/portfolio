@@ -9,6 +9,7 @@ import { StyledBox } from './FlashlightStyle';
  * The size and position of the circle change based on mouse movement and window resizing.
  *
  * @component
+ *
  * @example
  * ```jsx
  * <Flashlight />

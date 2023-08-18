@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
+import { Fade } from "react-awesome-reveal";
 
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 import { StyledContainer, StyledGridContainer, StyledGridItem, StyledAbsoluteDiv } from './MainLayoutStyles';
-import { Container } from '@mui/material';
 
 /**
  * Interface containing children prop for the main layout
@@ -20,6 +20,7 @@ interface MainLayoutProps {
  */
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
+    <Fade>
     <StyledContainer>
       <StyledGridContainer container spacing={3}>
         <StyledGridItem item xs={6}>
@@ -34,6 +35,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         {children}
       </StyledAbsoluteDiv>
     </StyledContainer>
+    </Fade>
   );
 };
 

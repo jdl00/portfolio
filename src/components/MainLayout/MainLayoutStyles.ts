@@ -19,23 +19,22 @@ export const StyledContainer = styled(Container)({
 export const StyledGridContainer = styled(Grid)({
   height: '100%',
   boxSizing: 'border-box',
-  width: '100%',
 });
 
 export const StyledGridItem = styled(Grid)({
   height: '100%',
-  '&:nth-child(1)': { // Targets the LeftSection
+  '&:nth-child(1)': {
     position: 'fixed',
-    top: '0',
-    left: '0',
-    width: '50vw', // assuming it takes half the viewport
-    height: '100vh', // it covers the full height of the viewport
+    top: '4rem',    // Add top padding to match container
+    left: '6rem',   // Add left padding to match container
+    width: 'calc(50vw - 6rem)',   // Adjust width to account for padding
+    height: 'calc(100vh - 8rem)',  // Adjust for top and bottom padding
     overflowY: 'hidden',
   },
-  '&:nth-child(2)': { // Targets the RightSection
-    marginLeft: '50vw', // push it to the right, equivalent to the width of the left section
+  '&:nth-child(2)': {
+    marginLeft: 'calc(40vw)',
     overflowY: 'auto',
-    height: 'calc(100vh + 50px)', // Example: 50px past viewport, adjust as needed
+    height: 'calc(100vh + 50px)',
   }
 });
 

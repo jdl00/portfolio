@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Fade } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal';
+
 
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';

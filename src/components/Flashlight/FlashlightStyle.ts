@@ -7,10 +7,9 @@ interface StyledBoxProps {
 
 // Styling for the gradient circle
 // TODO: If colors are reused moved into global style, or at least use global style?
-// TODO: See if this method affects the functionality
 export const StyledBox = styled('div')<StyledBoxProps>(({ circleDiameter }) => ({
   width: '100%',
-  height: '100vh',
+  height: 'calc(100vh + 50px)',
   position: 'relative',
   overflow: 'hidden',
   zIndex: 999,

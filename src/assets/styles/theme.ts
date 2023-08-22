@@ -50,8 +50,19 @@ const theme = createTheme({
     },
     MuiCssBaseline: {
       styleOverrides: {
-        body: {
+        html: {
+          height: '100%',
           backgroundImage: backgroundColors.default,
+          backgroundRepeat: 'no-repeat',  // Prevent gradient from repeating
+          backgroundAttachment: 'fixed',  // Ensures gradient doesn't restart upon scrolling
+          scrollBehaviour: 'smooth',
+        },
+        body: {
+          height: '100%',
+          backgroundImage: backgroundColors.default,
+          backgroundRepeat: 'no-repeat',  // Prevent gradient from repeating
+          backgroundAttachment: 'fixed',  // Ensures gradient doesn't restart upon scrolling
+          margin: 0,  // Reset default browser margin
         },
       },
     },

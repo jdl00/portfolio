@@ -57,7 +57,7 @@ const Flashlight: React.FC = () => {
   // JSX rendering logic
   return (
     <StyledBox circleDiameter={circleDiameter}>
-      <div ref={circleRef} className="circle" />
+      <div ref={circleRef} className="circle" data-testid="flashlight-circle"/>
     </StyledBox>
   );
 };

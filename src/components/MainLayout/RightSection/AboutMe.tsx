@@ -1,13 +1,14 @@
 import React from "react";
 
-import { StyledInnerBox, StyledPaper } from './RightStyles';
+import { StyledInnerBox } from './RightStyles';
 import aboutMeContent from './AboutMeContent';
+import { Fade } from "react-awesome-reveal";
 
 const AboutMe: React.FC = () => {
     return(
-    <StyledPaper>
-      <StyledInnerBox>{aboutMeContent}</StyledInnerBox>
-    </StyledPaper>
+      <Fade>
+        <StyledInnerBox>{aboutMeContent}</StyledInnerBox>
+      </Fade>
     );
 };
 

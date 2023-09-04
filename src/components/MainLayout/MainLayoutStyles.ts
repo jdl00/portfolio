@@ -1,10 +1,10 @@
 import { styled } from '@mui/system';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Divider } from '@mui/material';
 
 // Main container style
 export const StyledContainer = styled(Container)({
-  height: '100vh',
   width: '100%',
+  height: '100vh', // Ensure it takes up the entire viewport height
   display: 'flex',
   flexDirection: 'column',
   paddingTop: '4rem',
@@ -13,31 +13,25 @@ export const StyledContainer = styled(Container)({
   paddingRight: '6rem',
   maxWidth: 'xl',
   boxSizing: 'border-box',
+  overflow: 'visible', // Set to visible
 });
 
-// Styled grid container for splitting sections
-export const StyledGridContainer = styled(Grid)({
-  height: '100%',
-  boxSizing: 'border-box',
+export const StyledGridContainer = styled('div')({
+  display: 'flex',
+  width: '100%',
+  height: 'calc(100vh - 8rem)', // Adjust this value based on your top and bottom padding
 });
+
 
 export const StyledGridItem = styled(Grid)({
+  flex: '1 0 50%', // This ensures each section takes up 50% of the parent's width
   height: '100%',
-  '&:nth-child(1)': {
-    position: 'fixed',
-    top: '4rem',    // Add top padding to match container
-    left: '6rem',   // Add left padding to match container
-    width: 'calc(50vw - 6rem)',   // Adjust width to account for padding
-    height: 'calc(100vh - 8rem)',  // Adjust for top and bottom padding
-    overflowY: 'hidden',
-  },
-  '&:nth-child(2)': {
-    marginLeft: 'calc(40vw)',
-    overflowY: 'auto',
-    height: 'calc(100vh + 50px)',
-  }
+  overflowY: 'auto', // This ensures a scrollbar appears if content exceeds the container height
 });
 
+export const LeftGridItem = styled(StyledGridItem)({
+  overflowY: 'hidden'
+});
 
 // Styled absolute div for the radial cursor circle
 export const StyledAbsoluteDiv = styled('div')({

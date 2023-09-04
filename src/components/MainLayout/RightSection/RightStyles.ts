@@ -1,4 +1,4 @@
-import { styled } from '@mui/system';
+import { styled, alpha } from '@mui/system';
 import { Box, Container,  Typography } from '@mui/material';
 
 export const StyledInnerBox = styled(Box)(({ theme }) => ({
@@ -7,7 +7,7 @@ export const StyledInnerBox = styled(Box)(({ theme }) => ({
 }));
 
 export const StyledParagraph = styled(Typography)({
-  paddingTop: '1rem',
+  paddingTop: '0.5rem',
 });
 
 export const MainContainer = styled(Container)({
@@ -17,3 +17,12 @@ export const MainContainer = styled(Container)({
 
 
 });
+
+export const EmployerDate =  styled(Typography)(({ theme }) => ({
+    fontWeight: "normal",
+    fontSize: '1.1rem',
+    paddingTop: '1rem',
+    paddingBottom: '0rem',
+    color: alpha(theme.palette.secondary.main, 0.85),
+    alignItems: 'flex-start',
+  }));

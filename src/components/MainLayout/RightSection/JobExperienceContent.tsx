@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { StyledParagraph } from './RightStyles';
+import { StyledParagraph, EmployerDate } from './RightStyles';
 import { Fade } from 'react-awesome-reveal';
 
 const JobExperienceContent = [
     <>
     <Fade>
+        <EmployerDate><strong>ITP Engines UK</strong> Sept 2021 - Sept 2022</EmployerDate>
         <StyledParagraph variant="body1">
             • Delivered high-quality, robust production code for a diverse array of projects for clients including the <strong>European Space Agency (ESA)</strong> and more.<br />
             • Led and facilitated project wide changes to software development practices, such as moving to test driven development.<br />
@@ -18,6 +19,7 @@ const JobExperienceContent = [
         </StyledParagraph>
     </Fade>
     <Fade>
+        <EmployerDate><strong>CloudCall</strong> July 2016 - Sept 2016</EmployerDate>
         <StyledParagraph variant="body1">
         • Developed, designed and shipped production code, for a rendition of space invaders primarily using a tech stack of JavaScript, Electron, Phaser and MongoDB.<br />
         • Designed copyright-free graphics for use in the implementation.<br />

@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { Container, Grid, Divider } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 // Main container style
 export const StyledContainer = styled(Container)({

@@ -1,3 +1,5 @@
+[![Azure Static Web Apps CI/CD](https://github.com/jdl00/portfolio/actions/workflows/azure-static-web-apps-salmon-river-0b8e84e03.yml/badge.svg)](https://github.com/jdl00/portfolio/actions/workflows/azure-static-web-apps-salmon-river-0b8e84e03.yml)
+
 # Jonas's Portfolio
 
 Welcome to my personal portfolio website, showcasing my skills, experience, and some of the projects I've worked on. Feel free to explore and learn more about my work!

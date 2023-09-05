@@ -51,6 +51,6 @@ export const EmployerDate =  styled(Typography)(({ theme }) => ({
 
   [theme.breakpoints.down('sm')]: {
     height: 'auto',
-    paddingRight: "65%",
+    paddingRight: "60%",
   },
   }));

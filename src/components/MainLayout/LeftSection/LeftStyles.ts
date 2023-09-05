@@ -45,4 +45,8 @@ export const Containers = {
     padding: theme.spacing(2),
     backgroundColor: 'transparent',
   })),
+
+  IconLinks: styled(Box)({
+    alignItems: 'end',
+  }),
 };

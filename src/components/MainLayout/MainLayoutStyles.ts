@@ -2,9 +2,9 @@ import { styled } from '@mui/system';
 import { Container, Grid } from '@mui/material';
 
 // Main container style
-export const StyledContainer = styled(Container)({
+export const StyledContainer = styled(Container)(({ theme }) => ({
   width: '100%',
-  height: '100vh', // Ensure it takes up the entire viewport height
+  height: '100vh',
   display: 'flex',
   flexDirection: 'column',
   paddingTop: '4rem',
@@ -13,25 +13,48 @@ export const StyledContainer = styled(Container)({
   paddingRight: '6rem',
   maxWidth: 'xl',
   boxSizing: 'border-box',
-  overflow: 'visible', // Set to visible
-});
+  overflow: 'visible',
 
-export const StyledGridContainer = styled('div')({
+  [theme.breakpoints.down('sm')]: {
+    height: 'auto',
+    paddingBottom: '1rem',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+  },
+}));
+
+export const StyledGridContainer = styled('div')(({ theme }) => ({
   display: 'flex',
+  flexDirection: 'row',
   width: '100%',
-  height: 'calc(100vh - 8rem)', // Adjust this value based on your top and bottom padding
-});
+  height: 'calc(100vh - 8rem)',
+
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+    height: 'auto',
+  },
+}));
 
 
-export const StyledGridItem = styled(Grid)({
+
+export const StyledGridItem = styled(Grid)(({ theme }) => ({
   flex: '1 0 50%', // This ensures each section takes up 50% of the parent's width
   height: '100%',
   overflowY: 'auto', // This ensures a scrollbar appears if content exceeds the container height
-});
 
-export const LeftGridItem = styled(StyledGridItem)({
-  overflowY: 'hidden'
-});
+  [theme.breakpoints.down('sm')]: {
+    flex: '1 0 auto',
+    height: 'auto',
+  },
+}));
+
+export const LeftGridItem = styled(StyledGridItem)(({ theme }) => ({
+  overflowY: 'hidden',
+
+  [theme.breakpoints.down('sm')]: {
+    overflowY: 'auto',
+  },
+}));
 
 // Styled absolute div for the radial cursor circle
 export const StyledAbsoluteDiv = styled('div')({

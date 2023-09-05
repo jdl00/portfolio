@@ -1,33 +1,36 @@
 import React from 'react';
 
-import { StyledParagraph, EmployerDate } from './RightStyles';
+import { JobDescription, EmployerDate, GlowBox } from './RightStyles';
 import { Fade } from 'react-awesome-reveal';
 
 const JobExperienceContent = [
     <>
     <Fade>
-        <EmployerDate><strong>ITP Engines UK</strong> Sept 2021 - Sept 2022</EmployerDate>
-        <StyledParagraph variant="body1">
-            • Delivered high-quality, robust production code for a diverse array of projects for clients including the <strong>European Space Agency (ESA)</strong> and more.<br />
-            • Led and facilitated project wide changes to software development practices, such as moving to test driven development.<br />
-            • Provided mentorship within the engineering department to new starters through close collaboration, knowledge shares, and the creation of a starter pack.<br />
-            • Performed in-depth reviews of team members’ code to uphold quality and adherence to style guidelines.<br />
-            • Worked alongside project managers to ensure releases were on schedule.<br />
-            • Utilised Python to develop scripts to automate development tasks such as Doxygen to Pydoc comment converter, decreasing developer downtime.<br />
-            • Managed the 2022 Q1 service pack release, verifying test results, requirements and deployment of the product.<br />
-            • Performed a project-wide refactor to remove unused and outdated code, ensuring the codebase was using modern language features (C++17).
-        </StyledParagraph>
+        <GlowBox>
+        <EmployerDate>
+        <span style={{fontSize: "0.8rem", paddingRight: "1rem"}}>Sept 2021 - Sept 2022 </span>
+        <strong>ITP Engines UK • Software Engineer</strong>
+        </EmployerDate>
+        <JobDescription>
+            Delivered robust production code for high-profile clients like the European Space Agency. Led shifts in software practices, such as adopting test-driven development. Mentored new engineers through collaboration and a starter pack. Conducted meticulous code reviews for quality assurance. Collaborated with project managers for timely releases. Automated development tasks using Python, reducing downtime. Managed the 2022 Q1 service pack release from testing to deployment. Modernized the codebase through a project-wide refactor to C++17 standards.
+        </JobDescription>
+        </GlowBox>
     </Fade>
     <Fade>
-        <EmployerDate><strong>CloudCall</strong> July 2016 - Sept 2016</EmployerDate>
-        <StyledParagraph variant="body1">
-        • Developed, designed and shipped production code, for a rendition of space invaders primarily using a tech stack of JavaScript, Electron, Phaser and MongoDB.<br />
-        • Designed copyright-free graphics for use in the implementation.<br />
-        • Utilised scrum framework to organise development tasks into well-defined sprints, increase productivity and task management.<br />
-        • Conducted written evaluations into the scalability and performance impacts of changes onto the project.<br />
-        • Effectively communicated with project management team, addressing their concerns and ensuring alignment between their requirements and architecture design.<br />
-        • Developed and Implemented a testing scheme, consisting of a written GUI report and unit testing of each of the components.<br />
-        </StyledParagraph>
+        <GlowBox>
+        <EmployerDate>
+        <span style={{fontSize: "0.8rem", paddingRight: "1rem"}}>Sept 2021 - Sept 2022 </span>
+        <strong>CloudCall • Software Engineer</strong>
+        </EmployerDate>
+        <JobDescription variant="body1">
+        Developed and shipped a Space Invaders rendition using a tech stack of JavaScript, Electron, Phaser, and MongoDB. Created copyright-free graphics, organized development with scrum sprints, and assessed scalability and performance impacts. Coordinated with project managers to align requirements and design. Implemented a comprehensive testing scheme, including GUI reports and unit tests.
+        </JobDescription>
+        </GlowBox>
+    </Fade>
+    <Fade>
+        <a href='https://drive.google.com/uc?export=download&id=1-LPQ8xzAFDGgc110Kt4XQ2z0iTnRCIpJ'style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noopener noreferrer">
+        See full resume
+        </a>
     </Fade>
     </>
 ];

@@ -4,7 +4,8 @@ import { CssBaseline } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage';
-import theme from './assets/styles/theme'
+import NotFound from './pages/NotFound';
+import theme from './assets/styles/theme';
 
 const App: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const App: React.FC = () => {
         <CssBaseline />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* Other routes can be added here */}
+          <Route path='*' element={<NotFound />}/>
         </Routes>
       </ThemeProvider>
     </Router>

@@ -61,7 +61,7 @@ const BuildTitleHeadline: React.FC = () => {
                 Jonas Lindstrom
             </Headers.Name>
             <Headers.Title variant='h2'>
-                Graduate Software Engineer
+                Software Engineer
             </Headers.Title>
             <Headers.Description variant='h3'>
                 I craft full-stack applications,

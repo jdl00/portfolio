@@ -1,6 +1,5 @@
 import { styled, alpha } from '@mui/system';
 import { Box, Container,  Typography } from '@mui/material';
-import backgroundColors from '../../../assets/styles/backgroundPallete';
 
 export const StyledInnerBox = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),

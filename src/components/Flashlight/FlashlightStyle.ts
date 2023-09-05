@@ -12,7 +12,7 @@ export const StyledBox = styled('div')<StyledBoxProps>(({ circleDiameter }) => (
   height: 'calc(100vh)',
   position: 'relative',
   overflow: 'hidden',
-  zIndex: 999,
+  zIndex: 2,
   pointerEvents: 'none',
 
   '.circle': {

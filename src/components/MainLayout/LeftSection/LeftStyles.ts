@@ -48,5 +48,6 @@ export const Containers = {
 
   IconLinks: styled(Box)({
     alignItems: 'end',
-  }),
+    paddingLeft: '1rem',
+   }),
 };

@@ -10,13 +10,18 @@ export const StyledParagraph = styled(Typography)({
   paddingTop: '0.5rem',
 });
 
-export const JobDescription = styled(Typography)({
+export const JobDescription = styled(Typography)(({ theme }) => ({
   paddingTop: '0.5rem',
   fontWeight: 'normal',
   fontSize: '0.9rem',
   paddingLeft: '9.8rem',
 
-});
+  [theme.breakpoints.down('sm')]: {
+    height: 'auto',
+    paddingBottom: '1rem',
+    paddingLeft: '0rem',
+  },
+}));
 
 export const MainContainer = styled(Container)({
     width: '100%',
@@ -43,4 +48,9 @@ export const EmployerDate =  styled(Typography)(({ theme }) => ({
     paddingBottom: '0rem',
     color: alpha(theme.palette.secondary.main, 0.85),
     alignItems: 'flex-start',
+
+  [theme.breakpoints.down('sm')]: {
+    height: 'auto',
+    paddingRight: "65%",
+  },
   }));

@@ -10,34 +10,42 @@ const StyledGithubIcon = styled(GithubIcon)(({ theme }) => ({
   fill: "#B1C2E0",
   height: '2rem',
   width: '2rem',
-  marginRight: '1rem'
+  marginRight: '1rem',
+
 }));
 
 const StyledLinkedinIcon = styled(LinkedinIcon)(({ theme }) => ({
   fill: "#B1C2E0",
   height: '2rem',
   width: '2rem',
-  marginRight: '1rem'
+  marginRight: '1rem',
+
 }));
 
 const StyledEmailIcon = styled(EmailIcon)(({ theme }) => ({
   fill: "#B1C2E0",
   height: '2rem',
   width: '2rem',
-  marginRight: '1rem'
+  marginRight: '1rem',
+
 }));
 
 const BuildIcons: React.FC = () => {
   return (
       <Containers.IconLinks>
-      <StyledGithubIcon />
-      <StyledLinkedinIcon />
-      <StyledEmailIcon />
+        <a href="https://www.github.com/jdl00" target="_blank" rel="noopener noreferrer">
+        <StyledGithubIcon />
+        </a>
+        <a href="https://www.linkedin.com/in/jdlindstrom/" target="_blank" rel="noopener noreferrer">
+        <StyledLinkedinIcon />
+        </a>
+        <a href = "mailto: me@jonaslindstrom.co.uk" target="_blank" rel="noopener noreferrer">
+        <StyledEmailIcon />
+        </a>
       </Containers.IconLinks>
   );
 };
 
-// TODO: Complete section
 const BuildContentsAndLinks: React.FC = () => {
   return (
     <Containers.PaddedOuter style={{flexDirection: 'column', height: "70%", justifyContent: "flex-end", margin: '1rem, 1rem'}}>

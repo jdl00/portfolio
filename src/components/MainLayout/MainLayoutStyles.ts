@@ -28,6 +28,7 @@ export const StyledGridContainer = styled('div')(({ theme }) => ({
   flexDirection: 'row',
   width: '100%',
   height: 'calc(100vh - 8rem)',
+  zIndex: 3,
 
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',

@@ -46,6 +46,8 @@ export const StyledGridItem = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     flex: '1 0 auto',
     height: 'auto',
+    paddingLeft: '0',
+
   },
 }));
 

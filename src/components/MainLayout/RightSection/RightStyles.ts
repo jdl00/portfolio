@@ -33,7 +33,7 @@ export const MainContainer = styled(Container)({
 
 export const GlowBox = styled('div')(({ theme }) => ({
   borderRadius: '12px',  // Rounded corners
-  padding: theme.spacing(2),
+  padding: 0,
   transition: 'box-shadow 0.5s ease-in-out',
   ':hover': {
     backgroundColor: 'rgba(255, 255, 255, 0.02)', // Slightly lighter background
